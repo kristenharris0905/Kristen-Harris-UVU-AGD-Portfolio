@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: refresher_bucket.ma
-//Last modified: Mon, Aug 31, 2026 04:42:35 PM
+//Last modified: Mon, Aug 31, 2026 04:40:07 PM
 //Codeset: 1252
 requires maya "2026";
 requires "mtoa" "5.5.3";
@@ -10,7 +10,7 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "16F327A0-492C-2302-64EE-99A05F962586";
+fileInfo "UUID" "49FCBA17-453C-E644-0288-C68961042A56";
 createNode transform -s -n "persp";
 	rename -uid "A3BFFB62-4D38-ADC5-3151-41B620E75D58";
 	setAttr ".v" no;
@@ -122,7 +122,7 @@ createNode imagePlane -n "imagePlaneShape1" -p "imagePlane1";
 	rename -uid "C99BE858-4FF9-8153-482A-968B5F3FF20E";
 	setAttr -k off ".v";
 	setAttr ".fc" 201;
-	setAttr ".imn" -type "string" "C:/GitHub/Kristen-Harris-UVU-AGD-Portfolio/MayaProjects/sourceimages/bucket reference 1 3d modeling 2.png";
+	setAttr ".imn" -type "string" "C:/GitHub/Kristen-Harris-UVU-AGD-Portfolio/bucket reference 1 3d modeling 2.png";
 	setAttr ".cov" -type "short2" 313 365 ;
 	setAttr ".dlc" no;
 	setAttr ".w" 3.13;
@@ -136,7 +136,7 @@ createNode imagePlane -n "imagePlaneShape2" -p "imagePlane2";
 	rename -uid "419D360F-4C43-063F-1359-75B507C68D36";
 	setAttr -k off ".v";
 	setAttr ".fc" 201;
-	setAttr ".imn" -type "string" "C:/GitHub/Kristen-Harris-UVU-AGD-Portfolio/MayaProjects/sourceimages/bucket reference 2.png";
+	setAttr ".imn" -type "string" "C:/GitHub/Kristen-Harris-UVU-AGD-Portfolio/bucket reference 2.png";
 	setAttr ".cov" -type "short2" 308 597 ;
 	setAttr ".dlc" no;
 	setAttr ".w" 3.08;

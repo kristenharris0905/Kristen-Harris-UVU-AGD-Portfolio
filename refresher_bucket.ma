@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: refresher_bucket.ma
-//Last modified: Mon, Aug 31, 2026 04:38:50 PM
+//Last modified: Mon, Aug 31, 2026 04:40:07 PM
 //Codeset: 1252
 requires maya "2026";
 requires "mtoa" "5.5.3";
@@ -10,7 +10,7 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "C5DE6682-4B2F-78F1-718A-5E905C44374D";
+fileInfo "UUID" "49FCBA17-453C-E644-0288-C68961042A56";
 createNode transform -s -n "persp";
 	rename -uid "A3BFFB62-4D38-ADC5-3151-41B620E75D58";
 	setAttr ".v" no;
@@ -142,19 +142,6 @@ createNode imagePlane -n "imagePlaneShape2" -p "imagePlane2";
 	setAttr ".w" 3.08;
 	setAttr ".h" 5.97;
 	setAttr ".cs" -type "string" "sRGB Encoded Rec.709 (sRGB)";
-createNode transform -n "pCube1";
-	rename -uid "9FA1AC81-49C5-B61F-F787-9F869910C4A2";
-	setAttr ".t" -type "double3" 0 0 3.4145128244288072 ;
-createNode mesh -n "pCubeShape1" -p "pCube1";
-	rename -uid "9958A4BA-407D-5E94-87A7-FEB68985991F";
-	setAttr -k off ".v";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "175DAF0D-4A4F-7B41-342F-A4A6357FB9DC";
 	setAttr -s 2 ".lnk";
@@ -318,9 +305,6 @@ createNode polySplitRing -n "polySplitRing3";
 	setAttr ".sma" 29.999999999999996;
 	setAttr ".p[0]"  0 0 1;
 	setAttr ".fq" yes;
-createNode polyCube -n "polyCube1";
-	rename -uid "6FDA1BBC-4FFA-3EFA-6689-16ADF962FB14";
-	setAttr ".cuv" 4;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -346,7 +330,6 @@ select -ne :openPBR_shader1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 2 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
@@ -379,7 +362,6 @@ connectAttr ":defaultColorMgtGlobals.cfe" "imagePlaneShape2.cmcf";
 connectAttr ":defaultColorMgtGlobals.cfp" "imagePlaneShape2.cmcp";
 connectAttr ":defaultColorMgtGlobals.wsn" "imagePlaneShape2.ws";
 connectAttr ":sideShape.msg" "imagePlaneShape2.ltc";
-connectAttr "polyCube1.out" "pCubeShape1.i";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
@@ -401,5 +383,4 @@ connectAttr "polySplitRing2.out" "polySplitRing3.ip";
 connectAttr "pCylinderShape1.wm" "polySplitRing3.mp";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "pCylinderShape1.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
 // End of refresher_bucket.ma

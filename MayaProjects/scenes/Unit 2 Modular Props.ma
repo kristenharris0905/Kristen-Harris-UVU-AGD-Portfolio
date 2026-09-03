@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Unit 2 Modular Props.ma
-//Last modified: Wed, Sep 02, 2026 09:25:17 PM
+//Last modified: Thu, Sep 03, 2026 12:31:16 PM
 //Codeset: 1252
 requires maya "2026";
 requires "mtoa" "5.5.3";
@@ -10,18 +10,18 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "DA9F7069-458B-88CE-DBB7-3CB78BD918C7";
+fileInfo "UUID" "0DFFC008-47C3-8DA6-2D21-469688192CCD";
 createNode transform -s -n "persp";
 	rename -uid "39287D49-4E49-479E-ACC2-6A9568E5674B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.9379064184694637 9.5828519354089927 24.473157711447787 ;
-	setAttr ".r" -type "double3" -16.799999999999788 -4.0000000000000044 0 ;
+	setAttr ".t" -type "double3" 0.95897514921642468 10.377138922756336 29.331383326345321 ;
+	setAttr ".r" -type "double3" -375.59999999996745 -5.1999999999969182 -9.9803083504335293e-17 ;
 	setAttr ".rpt" -type "double3" -3.3579224558566108e-17 -1.7487586229008533e-17 -1.5378294976720679e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "0A237F4D-4559-0046-56AB-898ED032683D";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 26.664665141297782;
+	setAttr ".coi" 31.612482295383412;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -79,9 +79,8 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "modular_picket_fence";
 	rename -uid "EBD2F164-4FDF-4C86-BC2E-E7A3E47CBBB6";
-	setAttr ".t" -type "double3" -1.75 0 0 ;
-	setAttr ".rp" -type "double3" 1.75 2.0215208581358581 -0.099999894245194496 ;
-	setAttr ".sp" -type "double3" 1.75 2.0215208581358581 -0.099999894245194496 ;
+	setAttr ".rp" -type "double3" 0 2.0215208581358581 -0.099999894245194496 ;
+	setAttr ".sp" -type "double3" 0 2.0215208581358581 -0.099999894245194496 ;
 createNode mesh -n "modular_picket_fenceShape" -p "modular_picket_fence";
 	rename -uid "A01C3909-4A8F-2830-53B4-C692F656582C";
 	setAttr -k off ".v";
@@ -116,6 +115,13 @@ createNode mesh -n "modular_picket_fenceShape" -p "modular_picket_fence";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 48 ".pt[0:47]" -type "float3"  -1.75 0 0 -1.75 0 0 -1.75 
+		0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 
+		0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 
+		-1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 
+		0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 
+		0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0 
+		-1.75 0 0 -1.75 0 0 -1.75 0 0 -1.75 0 0;
 	setAttr -s 48 ".vt[0:47]"  2 0 -0.1 3 0 -0.1 2 0 0.1 3 0 0.1 2 3.032281399 0.1
 		 3 3.032281399 0.1 2 3.032281399 -0.1 3 3.032281399 -0.1 2.5 4.043041706 0.1 2.5 4.043041706 -0.1
 		 1.75 2.6257956 -0.099999793 7.75 2.6257956 -0.099999793 1.75 2.6257956 -0.2999998
@@ -648,6 +654,8 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+select -ne :ikSystem;
+	setAttr -s 4 ".sol";
 connectAttr "groupId13.id" "modular_picket_fenceShape.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "modular_picket_fenceShape.iog.og[0].gco"
 		;

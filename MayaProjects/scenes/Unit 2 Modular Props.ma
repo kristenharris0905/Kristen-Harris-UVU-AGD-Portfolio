@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Unit 2 Modular Props.ma
-//Last modified: Fri, Sep 04, 2026 08:38:56 PM
+//Last modified: Tue, Sep 08, 2026 10:14:24 AM
 //Codeset: 1252
 requires maya "2026";
 requires "mtoa" "5.5.3";
@@ -10,22 +10,22 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "B0825197-4125-F47F-973F-E7A10BC7E4C2";
+fileInfo "UUID" "542CDC53-4140-C151-FDBF-38A9E095876B";
 createNode transform -s -n "persp";
 	rename -uid "39287D49-4E49-479E-ACC2-6A9568E5674B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -7.7755646726284935 20.336169262066942 47.237104300779656 ;
-	setAttr ".r" -type "double3" -20.400000000007044 -4.7999999999999767 -1.9948428706371447e-16 ;
-	setAttr ".rpt" -type "double3" -2.0877477155537157e-16 5.1789944411732843e-17 -2.7955949276052496e-16 ;
+	setAttr ".t" -type "double3" -9.6746035869688498 24.665208388059369 35.589387258108566 ;
+	setAttr ".r" -type "double3" -36.600000000000357 -8.4000000000002188 4.0188057619298057e-16 ;
+	setAttr ".rpt" -type "double3" -7.3025864756430883e-16 1.6952324010740226e-15 -9.4204834644943399e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "0A237F4D-4559-0046-56AB-898ED032683D";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 52.202948902958823;
+	setAttr ".coi" 42.126270397919633;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -9.2640638290186139 2.0215208530426021 -1.948847417261419 ;
+	setAttr ".tp" -type "double3" 0.072317123413056891 2.0215208530426025 2.9193282127380371 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "8CEE0632-4405-BCD2-935B-3890C65B1A72";

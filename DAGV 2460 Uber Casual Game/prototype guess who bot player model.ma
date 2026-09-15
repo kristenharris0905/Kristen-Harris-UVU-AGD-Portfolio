@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: prototype guess who bot player model.ma
-//Last modified: Mon, Sep 14, 2026 05:56:56 PM
+//Last modified: Mon, Sep 14, 2026 06:54:04 PM
 //Codeset: 1252
 requires maya "2026";
 requires "mtoa" "5.5.3";
@@ -10,17 +10,17 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "C8E540BF-4972-F179-6E35-25A948041950";
+fileInfo "UUID" "D6FD320E-4554-C989-6862-3CA04528E2D0";
 createNode transform -s -n "persp";
 	rename -uid "A7A2C0B0-48C7-7B28-868B-46A0C39C54AE";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.27927465184473554 33.949223114231295 57.930452971886083 ;
-	setAttr ".r" -type "double3" -12.338352729606976 -3.000000000000417 4.976436723362176e-17 ;
+	setAttr ".t" -type "double3" -0.98231831104594214 30.492453165338176 83.908748393465714 ;
+	setAttr ".r" -type "double3" -6.9383527296059473 -2.600000000000505 -2.4873689175987874e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "DCE50779-41C0-6AA5-BAAE-DD86E9F2FF08";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 69.814122296544696;
+	setAttr ".coi" 94.878212673001855;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -77,8 +77,9 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "bot_player";
 	rename -uid "F13658F8-4DBE-9B69-1060-6A815732886F";
-	setAttr ".rp" -type "double3" 0 15.791236624989285 -1.7834005782424489 ;
-	setAttr ".sp" -type "double3" 0 15.791236624989285 -1.7834005782424489 ;
+	setAttr ".t" -type "double3" 0 0 1.7834005782424489 ;
+	setAttr ".rp" -type "double3" 0 0 -1.7834005782424489 ;
+	setAttr ".sp" -type "double3" 0 0 -1.7834005782424489 ;
 createNode mesh -n "bot_playerShape" -p "bot_player";
 	rename -uid "8209F5E1-4EC0-0DA7-4EC6-5490A84BA26E";
 	setAttr -k off ".v";

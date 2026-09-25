@@ -87,6 +87,7 @@ public class GameBoard : MonoBehaviour
         {
             Debug.Log("You Win!");
             Debug.Log("Thanks for playing!");
+            UnityEditor.EditorApplication.isPlaying = false;
         }
         else
         {

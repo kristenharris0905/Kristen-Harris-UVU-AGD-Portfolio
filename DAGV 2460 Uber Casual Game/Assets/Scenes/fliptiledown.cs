@@ -30,7 +30,7 @@ public class fliptiledown : MonoBehaviour
         -publish the event*/
         if(IsTileDown == false)
         {
-            Debug.Log($"Flipping down {TileName}");
+            //Debug.Log($"Flipping down {TileName}");
             transform.rotation = Quaternion.Euler(105f, 0f, 0f);
             IsTileDown = true;
             this.IGotFlipped?.Invoke(this); //publish the event

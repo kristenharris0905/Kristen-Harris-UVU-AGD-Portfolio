@@ -22,7 +22,7 @@ public class pickrandomtile : MonoBehaviour
     public void StartGameNotification()
     {
         correct_tile_name = ($"player_tile_{UnityEngine.Random.Range(1, 7)}");
-        Debug.Log(correct_tile_name);
+        //Debug.Log(correct_tile_name);
         this.IChoseATile?.Invoke();
     }
     

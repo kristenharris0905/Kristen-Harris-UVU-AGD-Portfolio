@@ -28,6 +28,7 @@ public class GameBoard : MonoBehaviour
     
     void Awake()
     {
+        Debug.Log("Game starting!");
         prt = BotPlayer.GetComponent<pickrandomtile>();
         ftd1 = playerTile1.GetComponent<fliptiledown>();
         ftd2 = playerTile2.GetComponent<fliptiledown>();
@@ -50,10 +51,8 @@ public class GameBoard : MonoBehaviour
 
     void AssignWinningTile()
     {
-        Debug.Log("Does the winning tile name even exist???");
-        Debug.Log($"The winning tile is... {prt.correct_tile_name}");
         winning_tile_name = prt.correct_tile_name;
-        Debug.Log(winning_tile_name);
+        Debug.Log("Bot: \"I picked my tile! Take a guess.\"");
     }
     
     void TellBotGameIsStarting(GameObject bot)
@@ -80,13 +79,14 @@ public class GameBoard : MonoBehaviour
     {
         //When a tile gets flipped, report the status of each tile again, for testing purposes.
         //I'm going to keep this and a lot of other stuff in here for testing purposes & until I understand more.
-        ReportAllTileStatus();
+        //ReportAllTileStatus();
 
         //I believe this is the place where I need to put the check if it's the winning tile!
         string selected_tile_name = ftd.TileName;
         if (selected_tile_name == winning_tile_name)
         {
             Debug.Log("You Win!");
+            Debug.Log("Thanks for playing!");
         }
         else
         {

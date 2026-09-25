@@ -19,7 +19,7 @@ public class fliptiledown : MonoBehaviour
     //Don't have to define anything about what it does, just shape (action)
     //The computer does not understand what this means, it just sends
     //this message when I tell it to send this message.
-    public event Action IGotFlipped;
+    public event Action<fliptiledown> IGotFlipped;
 
     private void OnMouseDown()
     {
@@ -33,7 +33,7 @@ public class fliptiledown : MonoBehaviour
             Debug.Log($"Flipping down {TileName}");
             transform.rotation = Quaternion.Euler(105f, 0f, 0f);
             IsTileDown = true;
-            this.IGotFlipped?.Invoke(); //publish the event
+            this.IGotFlipped?.Invoke(this); //publish the event
         }
     }
 }

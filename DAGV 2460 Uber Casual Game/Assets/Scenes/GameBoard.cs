@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class GameBoard : MonoBehaviour
 {
+    public string winning_tile_name;
     /*This creates fields in the Unity Inspector for each tile.
     I don't know what the use of this is or how it works yet, 
     or what the difference is between doing it this way vs. the way in the videos on canvas.
@@ -14,11 +15,27 @@ public class GameBoard : MonoBehaviour
     [SerializeField] private GameObject playerTile5; 
     [SerializeField] private GameObject playerTile6;
     //Connecting the objects in the inspector (models etc.) to this script without having to find them (drag and drop in the editor instead)
-     //COOPERAAAAAAAATE
+    private pickrandomtile prt;
+    private fliptiledown ftd1;
+    private fliptiledown ftd2;
+    private fliptiledown ftd3;
+    private fliptiledown ftd4;
+    private fliptiledown ftd5;
+    private fliptiledown ftd6;
+    
+
 
     
     void Awake()
     {
+        prt = BotPlayer.GetComponent<pickrandomtile>();
+        ftd1 = playerTile1.GetComponent<fliptiledown>();
+        ftd2 = playerTile2.GetComponent<fliptiledown>();
+        ftd3 = playerTile3.GetComponent<fliptiledown>();
+        ftd4 = playerTile4.GetComponent<fliptiledown>();
+        ftd5 = playerTile5.GetComponent<fliptiledown>();
+        ftd6 = playerTile6.GetComponent<fliptiledown>();
+
         //The game board subscribes to events broadcasted by the tiles when they get flipped down so it can hear them and react.
         //Then, it reports whether each tile is flipped up (True), or down (False).
         SubscribeToTileEvent(playerTile1);
@@ -33,10 +50,10 @@ public class GameBoard : MonoBehaviour
 
     void AssignWinningTile()
     {
-        pickrandomtile prt = BotPlayer.GetComponent<pickrandomtile>();
+        Debug.Log("Does the winning tile name even exist???");
         Debug.Log($"The winning tile is... {prt.correct_tile_name}");
-        fliptiledown ftd = tile.GetComponent<fliptiledown>();
-        string winning_tile_name = prt.correct_tile_name;
+        winning_tile_name = prt.correct_tile_name;
+        Debug.Log(winning_tile_name);
     }
     
     void TellBotGameIsStarting(GameObject bot)
@@ -59,7 +76,7 @@ public class GameBoard : MonoBehaviour
         ReportTileStatus(this.playerTile6);
     }
 
-    void ATileGotFlipped()
+    void ATileGotFlipped(fliptiledown ftd)
     {
         //When a tile gets flipped, report the status of each tile again, for testing purposes.
         //I'm going to keep this and a lot of other stuff in here for testing purposes & until I understand more.

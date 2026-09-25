@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Unit 2 Modular Props.ma
-//Last modified: Tue, Sep 22, 2026 03:51:29 PM
+//Last modified: Wed, Sep 23, 2026 05:33:38 PM
 //Codeset: 1252
 requires maya "2026";
 requires "mtoa" "5.5.3";
@@ -10,12 +10,12 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "F0302B72-4FA4-5362-8231-7195E707AD9D";
+fileInfo "UUID" "6E203D20-4D53-84BB-0068-FD9C347C6D42";
 createNode transform -s -n "persp";
 	rename -uid "39287D49-4E49-479E-ACC2-6A9568E5674B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.041772479484025737 13.962106153935911 25.561632400992877 ;
-	setAttr ".r" -type "double3" -30.599999999990363 359.19999999997174 -7.4551517329811268e-17 ;
+	setAttr ".t" -type "double3" 1.358157957588157 9.0544510921039212 27.655211894483003 ;
+	setAttr ".r" -type "double3" -16.200000000000138 363.19999999995468 -9.9547551904255691e-17 ;
 	setAttr ".rpt" -type "double3" -7.3025864756430883e-16 1.6952324010740226e-15 -9.4204834644943399e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "0A237F4D-4559-0046-56AB-898ED032683D";

@@ -14,8 +14,9 @@ public class GameBoard : MonoBehaviour
     [SerializeField] private GameObject playerTile5; 
     [SerializeField] private GameObject playerTile6;
     //Connecting the objects in the inspector (models etc.) to this script without having to find them (drag and drop in the editor instead)
-    
+     //COOPERAAAAAAAATE
 
+    
     void Awake()
     {
         //The game board subscribes to events broadcasted by the tiles when they get flipped down so it can hear them and react.
@@ -32,19 +33,19 @@ public class GameBoard : MonoBehaviour
 
     void AssignWinningTile()
     {
-        Debug.Log($"This is your gameboard speaking. I heard the winning tile has been selected!");
+        pickrandomtile prt = BotPlayer.GetComponent<pickrandomtile>();
+        Debug.Log($"The winning tile is... {prt.correct_tile_name}");
+        fliptiledown ftd = tile.GetComponent<fliptiledown>();
+        string winning_tile_name = prt.correct_tile_name;
     }
+    
     void TellBotGameIsStarting(GameObject bot)
     {
         pickrandomtile prt = bot.GetComponent<pickrandomtile>();
         prt.IChoseATile += AssignWinningTile;
         prt.StartGameNotification();
-        Debug.Log("Running subscribe to bot tile choice");
-        Debug.Log($"The winning tile is... {prt.correct_tile_name}");
-
     }
 
-    
 
     void ReportAllTileStatus()
     {
@@ -65,7 +66,15 @@ public class GameBoard : MonoBehaviour
         ReportAllTileStatus();
 
         //I believe this is the place where I need to put the check if it's the winning tile!
-        
+        string selected_tile_name = ftd.TileName;
+        if (selected_tile_name == winning_tile_name)
+        {
+            Debug.Log("You Win!");
+        }
+        else
+        {
+            Debug.Log("Guess Again!");
+        }
     }
 
     void ReportTileStatus(GameObject tile)
@@ -76,6 +85,7 @@ public class GameBoard : MonoBehaviour
         I'm not sure of the left side of things, though.*/
 
         fliptiledown ftd = tile.GetComponent<fliptiledown>();
+        
         //Output the status of each tile in the debug log using a preset format.
         Debug.Log($"Tile {ftd.TileName} is down? {ftd.IsTileDown}");
     }

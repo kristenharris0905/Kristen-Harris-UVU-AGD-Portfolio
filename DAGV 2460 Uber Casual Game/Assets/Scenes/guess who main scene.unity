@@ -1708,6 +1708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61260d773acfa840877868ad80878da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameBoard
+  winning_tile_name: 
   BotPlayer: {fileID: 557006925}
   playerTile1: {fileID: 3639057488256104362}
   playerTile2: {fileID: 883844398550625706}

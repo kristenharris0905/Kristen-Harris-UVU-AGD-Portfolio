@@ -22,6 +22,8 @@ public class GameBoard : MonoBehaviour
     private fliptiledown ftd4;
     private fliptiledown ftd5;
     private fliptiledown ftd6;
+
+    bool collider_active;
     
 
 
@@ -36,6 +38,30 @@ public class GameBoard : MonoBehaviour
         ftd4 = playerTile4.GetComponent<fliptiledown>();
         ftd5 = playerTile5.GetComponent<fliptiledown>();
         ftd6 = playerTile6.GetComponent<fliptiledown>();
+
+        BoxCollider collider1;
+        collider1 = ftd1.GetComponent<BoxCollider>();
+        collider1.enabled = false;
+
+        BoxCollider collider2;
+        collider2 = ftd2.GetComponent<BoxCollider>();
+        collider2.enabled = false;
+
+        BoxCollider collider3;
+        collider3 = ftd3.GetComponent<BoxCollider>();
+        collider3.enabled = false;
+
+        BoxCollider collider4;
+        collider4 = ftd4.GetComponent<BoxCollider>();
+        collider4.enabled = false;
+
+        BoxCollider collider5;
+        collider5 = ftd5.GetComponent<BoxCollider>();
+        collider5.enabled = false;
+
+        BoxCollider collider6;
+        collider6 = ftd6.GetComponent<BoxCollider>();
+        collider6.enabled = false;
 
         //The game board subscribes to events broadcasted by the tiles when they get flipped down so it can hear them and react.
         //Then, it reports whether each tile is flipped up (True), or down (False).

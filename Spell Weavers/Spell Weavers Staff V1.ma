@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Spell Weavers Staff V1.ma
-//Last modified: Tue, Sep 29, 2026 07:32:54 PM
+//Last modified: Tue, Sep 29, 2026 08:52:11 PM
 //Codeset: 1252
 requires maya "2026";
 requires "mtoa" "5.5.3";
@@ -10,12 +10,12 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "F5EE7624-4D7D-B475-A88E-F48CD586E800";
+fileInfo "UUID" "EDFB0B85-489A-0D97-179F-BC9974C887A6";
 createNode transform -s -n "persp";
 	rename -uid "376E5982-41B1-D24E-A720-679AA7AD2CD9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -2.7427473863391008 -33.414186435498351 3.1609545032015856 ;
-	setAttr ".r" -type "double3" -255.93835277376738 1612.5999999989872 0 ;
+	setAttr ".t" -type "double3" 0.58447800214312995 -32.621454542215915 -15.441589523572929 ;
+	setAttr ".r" -type "double3" -251.13835277351035 1787.8000000003306 -2.4405332725195453e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "6A6623C8-46E2-86FE-5F35-EEAF0D0A18C7";
 	setAttr -k off ".v" no;

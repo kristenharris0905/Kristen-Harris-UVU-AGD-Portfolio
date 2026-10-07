@@ -196,8 +196,8 @@ public class GameBoard : MonoBehaviour
     {
         //Lets the game board know when a tile got flipped by listening for an event broadcasted by fliptiledown.cs
         //Don't understand the left half of this syntax fully!
-        //fliptiledown ftd = tile.GetComponent<fliptiledown>();
-        ftd.IGotFlipped += ATileGotFlipped;
+        fliptiledown ftd = tile.GetComponent<fliptiledown>();
+        //ftd.IGotFlipped += ATileGotFlipped;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

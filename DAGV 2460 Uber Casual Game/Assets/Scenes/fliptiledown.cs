@@ -1,8 +1,10 @@
 using UnityEngine;
 using System;
+using UnityEngine.Events;
 
 public class fliptiledown : MonoBehaviour
 {
+    public UnityEvent testingnewthing;
     public bool IsTileDown{
         get; //accessible publicly to get this information
         private set; //only "I" (fliptiledown class) can set it

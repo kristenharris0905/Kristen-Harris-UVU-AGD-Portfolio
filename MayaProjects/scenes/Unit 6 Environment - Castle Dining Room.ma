@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Unit 6 Environment - Castle Dining Room.ma
-//Last modified: Wed, Oct 07, 2026 08:12:37 PM
+//Last modified: Wed, Oct 07, 2026 08:19:22 PM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
@@ -11,22 +11,21 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "3DA7CE3D-4558-48BA-7F6D-CEAFE5F3C705";
+fileInfo "UUID" "5C0ABCE7-4FE2-B952-FB21-20AFB862ADD0";
 createNode transform -s -n "persp";
 	rename -uid "AC3FD84A-428E-7664-1C5A-EF80B93BC1DC";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -18.32214487686846 25.940431542919111 -47.759007878474556 ;
-	setAttr ".r" -type "double3" -22.400001042920195 -153.20023037480408 0 ;
+	setAttr ".t" -type "double3" -4.6410291253962157 24.012949479367098 -33.310998193269945 ;
+	setAttr ".r" -type "double3" -28.400001941815109 -161.99976509085707 0 ;
 	setAttr ".rpt" -type "double3" -1.4664983997523394e-15 -2.9513319325263719e-16 7.9782486376176599e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "E942872D-4374-577E-7315-BB94FB4E28FE";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 60.561430796194372;
+	setAttr ".coi" 39.023118592883002;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0 1.9548106193542258 12.070709087173046 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "7C33B200-4BE5-C0E0-0A08-51AB4B83FF48";
@@ -79,7 +78,7 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "person_for_scale";
 	rename -uid "789F051A-4CE5-686C-81D5-A08D8C02CAB7";
-	setAttr ".t" -type "double3" 0 0.90000010481415371 8.6835900704110358 ;
+	setAttr ".t" -type "double3" 5.5571109348882999 0.90000010481415371 -1.2419015897973527 ;
 	setAttr ".s" -type "double3" 1 2.5686010711675569 1 ;
 	setAttr ".rp" -type "double3" 0 -0.90000010481415371 0 ;
 	setAttr ".sp" -type "double3" 0 -0.50000005823008564 0 ;
@@ -1739,7 +1738,7 @@ createNode mesh -n "fireplace_top_blockoutShape" -p "fireplace_top_blockout";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "pillar_blockout_1";
 	rename -uid "A90C13D9-4515-DCBD-EFDD-2FB6B75E4D21";
-	setAttr ".t" -type "double3" 8.3271566283525935 7.8129703219482796 -11.078594576052685 ;
+	setAttr ".t" -type "double3" 8.6918997394129498 7.8129703219482796 -11.078594576052685 ;
 	setAttr ".s" -type "double3" 1.0186409252647837 7.4514844414971995 1.0186409252647837 ;
 createNode mesh -n "pillar_blockout_Shape1" -p "pillar_blockout_1";
 	rename -uid "28C35EB2-46F8-9BEF-7F87-8E92297120D2";
@@ -2367,6 +2366,7 @@ createNode mesh -n "pillar_base_blockout_Shape3" -p "pillar_base_blockout_3";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "pillar_blockout_3";
 	rename -uid "93F028BA-4C76-E8EF-FD7C-B58321097CA8";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 8.3271566283525935 7.8129703219482796 5.4380035039105969 ;
 	setAttr ".s" -type "double3" 1.0186409252647837 7.4514844414971995 1.0186409252647837 ;
 createNode mesh -n "pillar_blockout_Shape3" -p "pillar_blockout_3";
@@ -2767,7 +2767,7 @@ createNode mesh -n "pillar_base_blockout_Shape4" -p "pillar_base_blockout_4";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "pillar_blockout_4";
 	rename -uid "6D6EB7A6-4EB1-138D-039B-C7BFA3034BE5";
-	setAttr ".t" -type "double3" 8.3271566283525935 7.8129703219482796 -5.4116736658443241 ;
+	setAttr ".t" -type "double3" 8.6715134249284915 7.8129703219482796 -5.4116736658443241 ;
 	setAttr ".s" -type "double3" 1.0186409252647837 7.4514844414971995 1.0186409252647837 ;
 createNode mesh -n "pillar_blockout_Shape4" -p "pillar_blockout_4";
 	rename -uid "6740E1C0-4897-FD37-BAB2-84A94B326194";
@@ -3967,6 +3967,7 @@ createNode mesh -n "pillar_base_blockout_Shape7" -p "pillar_base_blockout_7";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "pillar_blockout_7";
 	rename -uid "AED9E300-47A2-CC9A-FD57-98BCE51DB2E9";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" -7.6876791500921229 7.8129703219482796 5.4380035039105969 ;
 	setAttr ".s" -type "double3" 1.0186409252647837 7.4514844414971995 1.0186409252647837 ;
 createNode mesh -n "pillar_blockout_Shape7" -p "pillar_blockout_7";
@@ -4367,6 +4368,7 @@ createNode mesh -n "pillar_base_blockout_Shape8" -p "pillar_base_blockout_8";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "pillar_blockout_8";
 	rename -uid "19636F7C-4732-F290-8B61-7EB890C9189D";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" -7.6876791500921229 7.8129703219482796 -5.4116736658443241 ;
 	setAttr ".s" -type "double3" 1.0186409252647837 7.4514844414971995 1.0186409252647837 ;
 createNode mesh -n "pillar_blockout_Shape8" -p "pillar_blockout_8";
@@ -4565,6 +4567,98 @@ createNode mesh -n "pillar_blockout_Shape8" -p "pillar_blockout_8";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+createNode transform -n "door_blockout_1";
+	rename -uid "ED6780EB-43D4-8B53-1EB0-0C80AE047639";
+	setAttr ".t" -type "double3" 8.8773155355737075 6.6434793411431787 -0.041389839247954363 ;
+	setAttr ".s" -type "double3" 0.27407856205862285 8.5608440315525254 5.1541121277422013 ;
+	setAttr ".rp" -type "double3" 0 -6.6434792219338892 0 ;
+	setAttr ".sp" -type "double3" 0 -0.49999997788972322 0 ;
+	setAttr ".spt" -type "double3" 0 -6.1434792440441619 0 ;
+createNode mesh -n "door_blockout_Shape1" -p "door_blockout_1";
+	rename -uid "3AB2A9BE-4B12-D7D1-9D94-CFBA47889C43";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 5 ".pt";
+	setAttr ".pt[8]" -type "float3" 0 0 -0.49999499 ;
+	setAttr ".pt[9]" -type "float3" 0 0 -0.49999499 ;
+	setAttr ".pt[10]" -type "float3" 0 0 0.49999499 ;
+	setAttr ".pt[11]" -type "float3" 0 0 0.49999499 ;
+createNode transform -n "door_blockout_2";
+	rename -uid "A4CF8D93-46F0-30BA-7CAD-D6B2C5329AD8";
+	setAttr ".t" -type "double3" -8.8953730232267745 6.6434793411431787 -0.041389839247954363 ;
+	setAttr ".s" -type "double3" 0.27407856205862285 8.5608440315525254 5.1541121277422013 ;
+	setAttr ".rp" -type "double3" 0 -6.6434792219338892 0 ;
+	setAttr ".sp" -type "double3" 0 -0.49999997788972322 0 ;
+	setAttr ".spt" -type "double3" 0 -6.1434792440441619 0 ;
+createNode mesh -n "door_blockout_Shape2" -p "door_blockout_2";
+	rename -uid "2D092420-4D7F-0335-B6BC-25BB0B3EBC8B";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr -s 6 ".gtag";
+	setAttr ".gtag[0].gtagnm" -type "string" "back";
+	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "f[2]";
+	setAttr ".gtag[1].gtagnm" -type "string" "bottom";
+	setAttr ".gtag[1].gtagcmp" -type "componentList" 1 "f[3]";
+	setAttr ".gtag[2].gtagnm" -type "string" "front";
+	setAttr ".gtag[2].gtagcmp" -type "componentList" 1 "f[0]";
+	setAttr ".gtag[3].gtagnm" -type "string" "left";
+	setAttr ".gtag[3].gtagcmp" -type "componentList" 1 "f[5]";
+	setAttr ".gtag[4].gtagnm" -type "string" "right";
+	setAttr ".gtag[4].gtagcmp" -type "componentList" 1 "f[4]";
+	setAttr ".gtag[5].gtagnm" -type "string" "top";
+	setAttr ".gtag[5].gtagcmp" -type "componentList" 2 "f[1]" "f[6:9]";
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 18 ".uvst[0].uvsp[0:17]" -type "float2" 0.375 0 0.625 0 0.375
+		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
+		 0.875 0.25 0.125 0 0.125 0.25 0.375 0.25 0.625 0.25 0.625 0.5 0.375 0.5;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 5 ".pt";
+	setAttr ".pt[8]" -type "float3" 0 0 -0.49999499 ;
+	setAttr ".pt[9]" -type "float3" 0 0 -0.49999499 ;
+	setAttr ".pt[10]" -type "float3" 0 0 0.49999499 ;
+	setAttr ".pt[11]" -type "float3" 0 0 0.49999499 ;
+	setAttr -s 12 ".vt[0:11]"  -0.5 -0.50000006 0.5 0.5 -0.50000006 0.5
+		 -0.5 0.5 0.5 0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.50000006 -0.5 0.5 -0.50000006 -0.5
+		 -0.5 0.83391225 0.5 0.5 0.83391225 0.5 0.5 0.83391225 -0.5 -0.5 0.83391225 -0.5;
+	setAttr -s 20 ".ed[0:19]"  0 1 0 2 3 1 4 5 1 6 7 0 0 2 0 1 3 0 2 4 1
+		 3 5 1 4 6 0 5 7 0 6 0 0 7 1 0 2 8 0 3 9 0 8 9 0 5 10 0 9 10 0 4 11 0 11 10 0 8 11 0;
+	setAttr -s 10 -ch 40 ".fc[0:9]" -type "polyFaces" 
+		f 4 0 5 -2 -5
+		mu 0 4 0 1 3 2
+		f 4 14 16 -19 -20
+		mu 0 4 14 15 16 17
+		f 4 2 9 -4 -9
+		mu 0 4 4 5 7 6
+		f 4 3 11 -1 -11
+		mu 0 4 6 7 9 8
+		f 4 -12 -10 -8 -6
+		mu 0 4 1 10 11 3
+		f 4 10 4 6 8
+		mu 0 4 12 0 2 13
+		f 4 1 13 -15 -13
+		mu 0 4 2 3 15 14
+		f 4 7 15 -17 -14
+		mu 0 4 3 5 16 15
+		f 4 -3 17 18 -16
+		mu 0 4 5 4 17 16
+		f 4 -7 12 19 -18
+		mu 0 4 4 2 14 17;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "4748BE22-4CCE-AF4B-B977-C0AB65775A85";
 	setAttr -s 2 ".lnk";
@@ -4753,6 +4847,21 @@ createNode polyCylinder -n "polyCylinder3";
 	rename -uid "234A15FB-435F-F1A3-C941-0D8BB93D0F80";
 	setAttr ".sc" 1;
 	setAttr ".cuv" 3;
+createNode polyCube -n "polyCube5";
+	rename -uid "953F6124-4B5D-F883-9ADC-76AA2D790B40";
+	setAttr ".cuv" 4;
+createNode polyExtrudeFace -n "polyExtrudeFace2";
+	rename -uid "FE6FB615-4D43-1F49-371D-08A06488FC76";
+	setAttr ".ics" -type "componentList" 1 "f[1]";
+	setAttr ".ix" -type "matrix" 0.27407856205862285 0 0 0 0 8.5608440315525254 0 0 0 0 5.1541121277422013 0
+		 8.8773155355737075 4.2804219457029253 -0.041389839247954363 1;
+	setAttr ".ws" yes;
+	setAttr ".pvt" -type "float3" 8.8773155 8.5608444 -0.041389838 ;
+	setAttr ".rs" 48640;
+	setAttr ".lt" -type "double3" 0 0 2.858569911918698 ;
+	setAttr ".c[0]"  0 1 1;
+	setAttr ".cbn" -type "double3" 8.7402762545443959 8.560843961479188 -2.618445903119055 ;
+	setAttr ".cbx" -type "double3" 9.014354816603019 8.560843961479188 2.5356662246231463 ;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -4778,7 +4887,7 @@ select -ne :openPBR_shader1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 27 ".dsm";
+	setAttr -s 29 ".dsm";
 	setAttr ".ro" yes;
 	setAttr -s 2 ".gn";
 select -ne :initialParticleSE;
@@ -4835,6 +4944,7 @@ connectAttr "polyCube3.out" "r_wall_blockoutShape.i";
 connectAttr "polyCube4.out" "fireplace_base_blockoutShape.i";
 connectAttr "polyCylinder2.out" "pillar_blockout_Shape1.i";
 connectAttr "polyCylinder3.out" "pillar_base_blockout_Shape1.i";
+connectAttr "polyExtrudeFace2.out" "door_blockout_Shape1.i";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
@@ -4860,6 +4970,8 @@ connectAttr "glass_blockoutShape.iog.og[1]" "set2.dsm" -na;
 connectAttr "polyDelEdge1.out" "groupParts2.ig";
 connectAttr "groupId12.id" "groupParts2.gi";
 connectAttr "groupParts2.og" "deleteComponent1.ig";
+connectAttr "polyCube5.out" "polyExtrudeFace2.ip";
+connectAttr "door_blockout_Shape1.wm" "polyExtrudeFace2.mp";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "person_for_scaleShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "floorShape.iog" ":initialShadingGroup.dsm" -na;
@@ -4888,6 +5000,8 @@ connectAttr "pillar_base_blockout_Shape7.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pillar_blockout_Shape7.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pillar_base_blockout_Shape8.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pillar_blockout_Shape8.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "door_blockout_Shape1.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "door_blockout_Shape2.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "groupId10.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId11.msg" ":initialShadingGroup.gn" -na;
 // End of Unit 6 Environment - Castle Dining Room.ma

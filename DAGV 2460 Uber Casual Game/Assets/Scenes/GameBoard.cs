@@ -34,6 +34,8 @@ public class GameBoard : MonoBehaviour
     private fliptiledown ftd6;
 
     string player_tile_name;
+
+    public AudioSource audioSource;
     
 
 
@@ -155,19 +157,25 @@ public class GameBoard : MonoBehaviour
         ReportTileStatus(this.playerTile6);
     }
 
+void EndGame(){
+            UnityEditor.EditorApplication.isPlaying = false;
+        }  
     void ATileGotFlipped(fliptiledown ftd)
     {
         //When a tile gets flipped, report the status of each tile again, for testing purposes.
         //I'm going to keep this and a lot of other stuff in here for testing purposes & until I understand more.
         //ReportAllTileStatus();
 
+        
         //I believe this is the place where I need to put the check if it's the winning tile!
         string selected_tile_name = ftd.TileName;
         if (selected_tile_name == winning_tile_name)
         {
+            audioSource = this.GetComponent<AudioSource>();
+            audioSource.Play();
             Debug.Log("You Win!");
             Debug.Log("Thanks for playing!");
-            UnityEditor.EditorApplication.isPlaying = false;
+            Invoke("EndGame", 1.7f);
         }
         else
         {
@@ -197,7 +205,7 @@ public class GameBoard : MonoBehaviour
         //Lets the game board know when a tile got flipped by listening for an event broadcasted by fliptiledown.cs
         //Don't understand the left half of this syntax fully!
         fliptiledown ftd = tile.GetComponent<fliptiledown>();
-        //ftd.IGotFlipped += ATileGotFlipped;
+        ftd.IGotFlipped += ATileGotFlipped;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

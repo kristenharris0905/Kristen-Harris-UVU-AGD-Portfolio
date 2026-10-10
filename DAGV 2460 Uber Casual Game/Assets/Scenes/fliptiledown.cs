@@ -1,9 +1,12 @@
 using UnityEngine;
 using System;
 using UnityEngine.Events;
+using System.Security.Cryptography.X509Certificates;
 
 public class fliptiledown : MonoBehaviour
 {
+    public AudioSource audioSource; 
+    
     public UnityEvent testingnewthing;
     public bool IsTileDown{
         get; //accessible publicly to get this information
@@ -23,6 +26,8 @@ public class fliptiledown : MonoBehaviour
     //this message when I tell it to send this message.
     public event Action<fliptiledown> IGotFlipped;
 
+    
+
     private void OnMouseDown()
     {
         /*if the tile is up:
@@ -32,6 +37,8 @@ public class fliptiledown : MonoBehaviour
         -publish the event*/
         if(IsTileDown == false)
         {
+            audioSource = this.GetComponent<AudioSource>();
+            audioSource.Play();
             //Debug.Log($"Flipping down {TileName}");
             transform.rotation = Quaternion.Euler(105f, 0f, 0f);
             IsTileDown = true;

@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: stylized cartoon dog.ma
-//Last modified: Mon, Oct 12, 2026 11:42:06 PM
+//Last modified: Mon, Oct 12, 2026 11:56:32 PM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
@@ -12,18 +12,19 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "D7105747-44E0-40C4-51D4-DC9290BA73C1";
+fileInfo "UUID" "0F20989B-4D9A-10CA-E420-62B3B438702B";
 createNode transform -s -n "persp";
 	rename -uid "6BE17A2B-4CF9-6248-056D-F2A9CA90C1C4";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -15.960239178487807 10.999666772948247 5.6966075903967752 ;
-	setAttr ".r" -type "double3" -27.600000000001231 -434.39999999992403 -5.9135743028750694e-15 ;
-	setAttr ".rpt" -type "double3" -6.2190029379164359e-15 1.479890385693289e-15 -9.1345679891983469e-16 ;
+	setAttr ".t" -type "double3" 2.151813596341869 4.4593854047832577 -0.52596519882922643 ;
+	setAttr ".r" -type "double3" -28.200000000000806 46.600000000000492 -4.6290387053314953e-15 ;
+	setAttr ".rp" -type "double3" 0 -4.4408920985006262e-16 0 ;
+	setAttr ".rpt" -type "double3" -6.6235694774041504e-15 1.5873804594728398e-15 -1.4831370290690329e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CA106597-4D90-23E9-5F9F-2E96B35D3701";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 21.633704201612773;
+	setAttr ".coi" 3.0352753232472596;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -15204,7 +15205,7 @@ createNode shadingEngine -n "lambert5SG";
 createNode materialInfo -n "materialInfo4";
 	rename -uid "CCFA9517-4CAC-80EA-9856-C2ADFD5F13C7";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "FFA473E1-4C9B-0425-4889-EAB4BED9BFAF";
+	rename -uid "C7BC5CBF-4312-B96D-E3A1-66AB81F1BE31";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -4289.182024180197 -2903.0537148707535 ;
 	setAttr ".tgi[0].vh" -type "double2" 4371.0660788974319 2900.6727625844114 ;

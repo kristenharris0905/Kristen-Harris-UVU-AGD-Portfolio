@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Spell Weavers Staff V1.ma
-//Last modified: Tue, Oct 13, 2026 06:36:22 PM
+//Last modified: Tue, Oct 13, 2026 06:57:38 PM
 //Codeset: 1252
 requires maya "2026";
 requires -nodeType "sweepMeshCreator" -dataType "sweepMeshData" -dataType "sweepProfileData"
@@ -14,22 +14,22 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "EE43E518-43B4-3CC9-A719-7EAE9B0DB194";
+fileInfo "UUID" "B56C8A82-4FBF-5649-CB63-25B4A03F27AC";
 createNode transform -s -n "persp";
 	rename -uid "376E5982-41B1-D24E-A720-679AA7AD2CD9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 12.322286612009771 17.744724729208706 31.027865789979614 ;
-	setAttr ".r" -type "double3" -36.000000000008136 375.99999999990689 -8.2718231021298302e-16 ;
+	setAttr ".t" -type "double3" 6.7567729808792283 11.227477780525295 10.279429258589898 ;
+	setAttr ".r" -type "double3" -45.600000000009985 396.79999999989656 1.9860310191736294e-15 ;
 	setAttr ".rpt" -type "double3" -5.7237962349122017e-15 -2.9147409953598771e-17 -3.1746797424517038e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "6A6623C8-46E2-86FE-5F35-EEAF0D0A18C7";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 39.130026415449848;
+	setAttr ".coi" 16.307531486081242;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 6.9805793167775274 -0.11044650418293894 -4.5640178438505226 ;
+	setAttr ".tp" -type "double3" 0 0.022813692688941956 0 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "13181C16-4758-04CF-CC32-428E8313E0BB";
@@ -8068,6 +8068,8 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+select -ne :ikSystem;
+	setAttr -s 4 ".sol";
 connectAttr "polyCylinder1.out" "bodyShape.i";
 connectAttr "gem_rotateX.o" "gem.rx";
 connectAttr "gem_rotateY.o" "gem.ry";

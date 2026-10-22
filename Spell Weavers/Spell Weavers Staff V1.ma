@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Spell Weavers Staff V1.ma
-//Last modified: Tue, Oct 20, 2026 11:00:08 PM
+//Last modified: Wed, Oct 21, 2026 07:12:39 PM
 //Codeset: 1252
 requires maya "2026";
 requires -nodeType "sweepMeshCreator" -dataType "sweepMeshData" -dataType "sweepProfileData"
@@ -15,18 +15,18 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "0547B8C5-49B8-31F5-533B-62816DB97068";
+fileInfo "UUID" "BF09BDE3-40C8-5618-3BD9-3B9483A229E2";
 createNode transform -s -n "persp";
 	rename -uid "376E5982-41B1-D24E-A720-679AA7AD2CD9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 7.9039922232056208 20.110700631326083 14.618127812863385 ;
+	setAttr ".t" -type "double3" 2.1138603125846886 5.953651649344998 -0.45508088605884511 ;
 	setAttr ".r" -type "double3" -770.39999999995734 -691.59999999996398 0 ;
 	setAttr ".rpt" -type "double3" -5.7237962349122017e-15 -2.9147409953598771e-17 -3.1746797424517038e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "6A6623C8-46E2-86FE-5F35-EEAF0D0A18C7";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 26.070787396570299;
+	setAttr ".coi" 4.9554892713249741;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";

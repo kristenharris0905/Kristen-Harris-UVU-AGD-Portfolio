@@ -344,6 +344,79 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 590a918f665b5c54ab260064ba53c028, type: 3}
+--- !u!1001 &1229264295
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 52b32d5f4eecdef4faa1cd32d7e0fb6e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 63.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52b32d5f4eecdef4faa1cd32d7e0fb6e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 63.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52b32d5f4eecdef4faa1cd32d7e0fb6e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 63.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52b32d5f4eecdef4faa1cd32d7e0fb6e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.9709
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52b32d5f4eecdef4faa1cd32d7e0fb6e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.88641
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52b32d5f4eecdef4faa1cd32d7e0fb6e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.51
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52b32d5f4eecdef4faa1cd32d7e0fb6e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52b32d5f4eecdef4faa1cd32d7e0fb6e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52b32d5f4eecdef4faa1cd32d7e0fb6e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52b32d5f4eecdef4faa1cd32d7e0fb6e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52b32d5f4eecdef4faa1cd32d7e0fb6e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52b32d5f4eecdef4faa1cd32d7e0fb6e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52b32d5f4eecdef4faa1cd32d7e0fb6e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52b32d5f4eecdef4faa1cd32d7e0fb6e, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52b32d5f4eecdef4faa1cd32d7e0fb6e, type: 3}
+      propertyPath: m_Name
+      value: Park BG Rock 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52b32d5f4eecdef4faa1cd32d7e0fb6e, type: 3}
 --- !u!1 &1458613815
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,6 +616,79 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 557006927}
   m_SourcePrefab: {fileID: 100100000, guid: 8729b66c33f4dc646a17af345b4d037e, type: 3}
+--- !u!1001 &1965261388
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: df6e9de539a24804a8d8a060593d7706, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 63.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: df6e9de539a24804a8d8a060593d7706, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 63.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: df6e9de539a24804a8d8a060593d7706, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 63.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: df6e9de539a24804a8d8a060593d7706, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.61
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: df6e9de539a24804a8d8a060593d7706, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.81308
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: df6e9de539a24804a8d8a060593d7706, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.21
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: df6e9de539a24804a8d8a060593d7706, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: df6e9de539a24804a8d8a060593d7706, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: df6e9de539a24804a8d8a060593d7706, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: df6e9de539a24804a8d8a060593d7706, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: df6e9de539a24804a8d8a060593d7706, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: df6e9de539a24804a8d8a060593d7706, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: df6e9de539a24804a8d8a060593d7706, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: df6e9de539a24804a8d8a060593d7706, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: df6e9de539a24804a8d8a060593d7706, type: 3}
+      propertyPath: m_Name
+      value: Park BG Rock 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: df6e9de539a24804a8d8a060593d7706, type: 3}
 --- !u!1 &2143391518
 GameObject:
   m_ObjectHideFlags: 0
@@ -1810,3 +1956,5 @@ SceneRoots:
   - {fileID: 791856054}
   - {fileID: 543450652541922599}
   - {fileID: 2143391519}
+  - {fileID: 1229264295}
+  - {fileID: 1965261388}

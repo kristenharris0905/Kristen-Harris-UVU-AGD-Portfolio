@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Pine Tree with UVs and Textures from Maya.ma
-//Last modified: Wed, Nov 04, 2026 08:44:33 PM
+//Last modified: Thu, Nov 05, 2026 11:37:30 AM
 //Codeset: 1252
 requires maya "2026";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiStandardSurface"
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "8C14B52F-4E7D-501B-9BE6-E7867A7FE667";
+fileInfo "UUID" "01416E46-49C8-2565-655E-43B5B506C8EB";
 createNode transform -s -n "persp";
 	rename -uid "FC827FC2-41ED-E4C0-7241-C582205513E7";
 	setAttr ".v" no;
@@ -725,7 +725,7 @@ createNode aiStandardSurface -n "Tree_Mat";
 createNode shadingEngine -n "aiStandardSurface1SG";
 	rename -uid "232A8A03-4B90-AFAA-1BE1-7DA5C52CCA39";
 	setAttr ".ihi" 0;
-	setAttr -s 5 ".dsm";
+	setAttr -s 4 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo1";
 	rename -uid "6C3BCD01-4DCE-7986-01D0-E3AAE2DFFAE1";
@@ -751,7 +751,7 @@ createNode file -n "Pine_Tree_to_Substance_Painter_openPBR_shader1_BaseColor_1";
 createNode place2dTexture -n "place2dTexture1";
 	rename -uid "27C47D32-4259-23DB-C1D6-DEB93796F830";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "AD18A875-425E-0DB0-F2F5-ACB8348D1CFC";
+	rename -uid "ADDB48F6-40E6-EAF8-8932-5F8632476BA1";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -210.21842109913911 -916.54026060323588 ;
 	setAttr ".tgi[0].vh" -type "double2" 1293.0780317957749 -49.435096550997024 ;

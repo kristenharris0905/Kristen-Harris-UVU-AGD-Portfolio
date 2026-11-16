@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Cozy Cottage Living Room.ma
-//Last modified: Sat, Nov 14, 2026 11:15:26 PM
+//Last modified: Mon, Nov 16, 2026 03:03:59 PM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
@@ -11,18 +11,18 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "9927391C-4B21-9C8C-F355-9597197EF40F";
+fileInfo "UUID" "099E5CAE-45C2-8E23-3BBC-EA9AAE3D1105";
 createNode transform -s -n "persp";
 	rename -uid "B8C666BC-4E92-55A4-E7B5-52AB5579FB38";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 37.90981968364602 38.749867469850351 137.58299291878677 ;
+	setAttr ".t" -type "double3" 36.234111359968111 30.704101018092206 103.32064603186961 ;
 	setAttr ".r" -type "double3" -13.199999999996811 -717.19999999999959 1.4926670463843747e-16 ;
 	setAttr ".rpt" -type "double3" 1.163995186113321e-16 -1.7073625690236802e-16 -8.5588490269772436e-18 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "0B7D4970-4956-2962-2DC6-D291B5BD8E9D";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 119.51770600654848;
+	setAttr ".coi" 84.283478749778311;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";

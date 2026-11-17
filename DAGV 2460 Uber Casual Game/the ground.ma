@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: the ground.ma
-//Last modified: Mon, Nov 16, 2026 03:42:53 PM
+//Last modified: Mon, Nov 16, 2026 04:51:02 PM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
@@ -11,12 +11,12 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "79404129-4D04-421F-A748-659A60860EEE";
+fileInfo "UUID" "8FEA2C10-4A4E-73F6-1CA2-548C97770EBA";
 createNode transform -s -n "persp";
 	rename -uid "266ED946-46A9-8AFB-2C4F-658D4202FBBD";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 5.2164684139970889 64.897936421290439 71.03478339585412 ;
-	setAttr ".r" -type "double3" -42.338352729605923 4.200000000000343 1.9931994584565821e-16 ;
+	setAttr ".t" -type "double3" -5.9032287764908613 68.536680150998762 67.474213670440207 ;
+	setAttr ".r" -type "double3" -45.3383527296062 -4.9999999999999343 7.9817597091111021e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "AA953322-4045-AF58-34AC-84A65C7A7D18";
 	setAttr -k off ".v" no;
@@ -182,7 +182,7 @@ createNode file -n "Grass_texture_1";
 createNode place2dTexture -n "place2dTexture1";
 	rename -uid "62A4A3E4-4DE7-7E86-08A3-9BA2BFF5BFD9";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "F59F46FF-4303-9AF6-E679-5EAE88ED2E12";
+	rename -uid "B7B7AFB2-48A7-61E3-426A-5A8D46C60DD1";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -220.68671756447682 -125.37845272578147 ;
 	setAttr ".tgi[0].vh" -type "double2" 411.20744898574287 171.40158635847044 ;

@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Cozy Cottage Living Room.ma
-//Last modified: Wed, Nov 18, 2026 07:43:33 PM
+//Last modified: Thu, Nov 19, 2026 11:44:23 AM
 //Codeset: 1252
 requires maya "2026";
 requires -nodeType "sweepMeshCreator" -dataType "sweepMeshData" -dataType "sweepProfileData"
@@ -15,22 +15,22 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "32446E70-44EB-6A19-873B-898434364C88";
+fileInfo "UUID" "102B10F8-43AF-5DD4-9F2E-5BA30A19436F";
 createNode transform -s -n "persp";
 	rename -uid "B8C666BC-4E92-55A4-E7B5-52AB5579FB38";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 74.781917826915176 9.2262500745624507 -17.713700639704882 ;
-	setAttr ".r" -type "double3" 4.2000000000000188 176.79999999998995 0 ;
+	setAttr ".t" -type "double3" 3.5885465558521994 31.002138844685341 42.516631929791188 ;
+	setAttr ".r" -type "double3" -31.20000000000238 29.999999999999535 3.6725882030305538e-15 ;
 	setAttr ".rpt" -type "double3" 9.939450791996936e-15 4.3385744070715746e-15 1.5611633306612499e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "0B7D4970-4956-2962-2DC6-D291B5BD8E9D";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 27.373345041556995;
+	setAttr ".coi" 30.039072261488208;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 73.671435514908239 10.664155567249967 9.9049795090814605 ;
+	setAttr ".tp" -type "double3" 17.214225591916797 11.295243245725912 11.154017584156673 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "12AB6EEC-46A7-96F7-7A63-D68954992018";
@@ -7560,6 +7560,7 @@ createNode transform -n "curtain_1";
 	rename -uid "C757ABBE-456D-0DCB-0C7E-81BF533D9D67";
 	setAttr ".t" -type "double3" 0.8143040231590799 0 -12.134324571063008 ;
 	setAttr ".r" -type "double3" 0 179.99999999999994 0 ;
+	setAttr ".s" -type "double3" 0.86121947472883564 0.86121947472883564 0.86121947472883564 ;
 	setAttr ".rp" -type "double3" -15.563966274261475 23.443073272705078 36.806798934936523 ;
 	setAttr ".rpt" -type "double3" 3.5527136788005009e-14 0 -6.6791017161449417e-13 ;
 	setAttr ".sp" -type "double3" -15.563966274261475 23.443073272705078 36.806798934936523 ;
@@ -35859,7 +35860,7 @@ createNode lambert -n "curtain_mat";
 createNode shadingEngine -n "lambert2SG";
 	rename -uid "D34FC053-4C78-40F7-4E38-57A82198CB41";
 	setAttr ".ihi" 0;
-	setAttr -s 4 ".dsm";
+	setAttr -s 5 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo2";
 	rename -uid "A51F7CB2-4467-91C1-B4B0-E187453EC15C";
@@ -42831,7 +42832,7 @@ createNode polyExtrudeFace -n "polyExtrudeFace97";
 	setAttr ".cbn" -type "double3" 72.968312094705524 10.574339681429509 8.8696749016088567 ;
 	setAttr ".cbx" -type "double3" 73.131108114872674 10.574339681429509 9.0324931514082873 ;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "08626EAB-41DE-8B7A-1797-3AB327CBCE2C";
+	rename -uid "705D77E5-47D1-F6C7-91B1-6D9DA20E8EBA";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -2538.6588419469817 -1048.2952730284148 ;
 	setAttr ".tgi[0].vh" -type "double2" -1195.0744448944872 -124.4384295542888 ;
@@ -42903,7 +42904,7 @@ select -ne :initialShadingGroup;
 	setAttr -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 48 ".dsm";
+	setAttr -s 47 ".dsm";
 	setAttr -k on ".mwc";
 	setAttr -cb on ".an";
 	setAttr -cb on ".il";
